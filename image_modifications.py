@@ -18,10 +18,10 @@ imgNp=np.array(bytearray(imgRes.read()),dtype=np.uint8)
 img=cv2.imdecode(imgNp,-1)
 
 # convert image to gray scale
-# imgGray=cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
+imgGray=cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 
 #show image in a window
-cv2.imshow("IP Webcam",imgGray)
+# cv2.imshow("IP Webcam",imgGray)
 
 ret,thresh1 = cv2.threshold(imgGray,12,255,cv2.THRESH_BINARY)
 ret,thresh2 = cv2.threshold(imgGray,127,255,cv2.THRESH_BINARY_INV)
