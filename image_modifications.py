@@ -4,9 +4,9 @@ import numpy as np
 import time
 from matplotlib import pyplot as plt
 
-# url="http://zabido25.pagekite.me/cam/1/frame.jpg"
+url="http://zabido25.pagekite.me/cam/1/frame.jpg"
 
-url="http://192.168.0.221:4747/cam/1/frame.jpg"
+# url="http://192.168.0.221:4747/cam/1/frame.jpg"
 
 # list all possible flags in cv2
 # flags = [i for i in dir(cv2) if i.startswith('COLOR_')]
